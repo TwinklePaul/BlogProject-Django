@@ -1,0 +1,121 @@
+Script started on Fri Jul 16 18:35:12 2021
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Twinkles-MacBook-Pro.local/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/src[0m[27m[24m[J(base)     ppython ,a  manage.py shell[?2004l
+Python 3.8.8 (default, Apr 13 2021, 12:59:45) 
+[Clang 10.0.0 ] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from blog.models import Post
+>>> fro [Km django.contrib.auth.models import I[KUsr[Ker
+>>> User.objects.all()
+<QuerySet [<User: twinkle>]>
+>>> User.objects.all()[K[K[K[K[Kfirst()
+<User: twinkle>
+>>> User.objects.first()[K[K[K[K[Klter(username='twinkle')
+<QuerySet [<User: twinkle>]>
+>>> User.objects.filter(username='twinkle').first()
+<User: twinkle>
+>>> user [K[K[K[K[KUser.objects.filter(username='twinkle').first()uUser.objects.filter(username='twinkle').first()[C[C[C[C[CsUser.objects.filter(username='twinkle').first()[C[C[C[C[C[CeUser.objects.filter(username='twinkle').first()[C[C[C[C[C[C[CrUser.objects.filter(username='twinkle').first()[C[C[C[C[C[C[C[C User.objects.filter(username='twinkle').first()[C[C[C[C[C[C[C[C[C=User.objects.filter(username='twinkle').first()[C[C[C[C[C[C[C[C[C[C User.objects.filter(username='twinkle').first()[C[C[C[C[C[C[C[C[C[C[C[C
+>>> user
+<User: twinkle>
+>>> user.id
+2
+>>> user.pk
+2
+>>> user = User.objects.get(id = 2)
+>>> user
+<User: twinkle>
+>>> clear
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'clear' is not defined
+>>> Posts[K.objects.all()
+<QuerySet []>
+>>> post_1 = Post(title = 'B;[Klog1' 1'[C[C, content = 'First Post Content', author = use r)
+>>> post_1 = Post(title = 'Blog 1', content = 'First Post Content', author = user)[A[C[CPost.objects.all()[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<QuerySet []>
+>>> Post.objects.all()[C[C[C[Cpost_1 = Post(title = 'Blog 1', content = 'First Post Content', author = user)[A[C[CPost.objects.all()[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpost_1.save()
+>>> post_1.save()[C[C[C[CPost.objects.all()
+<QuerySet [<Post: Post object (1)>]>
+>>> exit()
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Twinkles-MacBook-Pro.local/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/src[0m[27m[24m[J(base) twinkle $ [K[?2004hcclear[?2004l
+[H[2J[3J[1m[7m%[27m[1m[0m                                                                                ]7;file://Twinkles-MacBook-Pro.local/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/src[0m[27m[24m[J(base) twinkle $ [K[?2004hclearpython manage.py shell[?2004l
+Python 3.8.8 (default, Apr 13 2021, 12:59:45) 
+[Clang 10.0.0 ] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from blogs.models import Post
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ModuleNotFoundError: No module named 'blogs'
+>>> exit()
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Twinkles-MacBook-Pro.local/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/src[0m[27m[24m[J(base) twinkle $ [K[?2004hcclear[?2004l
+[H[2J[3J[1m[7m%[27m[1m[0m                                                                                ]7;file://Twinkles-MacBook-Pro.local/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/src[0m[27m[24m[J(base) twinkle $ [K[?2004hclearpython manage.py shell[?2004l
+Python 3.8.8 (default, Apr 13 2021, 12:59:45) 
+[Clang 10.0.0 ] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from blog.models import Post
+>>> from django.c[Kcontrin[Kb.autj[Kh.models import User
+>>> Post.objects.all()
+<QuerySet [<Post: Blog 1>]>
+>>> user = User.objects.filter('twinkle').first()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1283, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+>>> user = User.objects.filter('twinkle').first()u'twinkle').first()s'twinkle').first()e'twinkle').first()r'twinkle').first()n'twinkle').first()a'twinkle').first()m'twinkle').first()e'twinkle').first() 'twinkle').first()='twinkle').first() 'twinkle').first()[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+>>> user
+<User: twinkle>
+>>> post_2 = Post(title = 'Blog 2 [K', content = 'A[KSecond post cont[Kye[K[Ktent', author_id =  user.if[Kd)
+>>> post_2.save()
+>>> post_2.save()[K[K[K[K[K[K[K[K[K[K[K[K[KPost.objet[Kcts.all()
+<QuerySet [<Post: Blog 1>, <Post: Blog 2>]>
+>>> post = Post.objects.fira[Kst()
+>>> post
+<Post: Blog 1>
+>>> post.content
+'First Post Content'
+>>> post.content[K[K[K[K[K[K[Kdate_posted
+datetime.datetime(2021, 7, 16, 13, 12, 8, 545090, tzinfo=<UTC>)
+>>> post.author
+<User: twinkle>
+>>> post.author.name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'User' object has no attribute 'name'
+>>> post.author.name[K[K[K[Kusername
+'twinkle'
+>>> post.author.username[K[K[K[K[K[K[K[Kid
+2
+>>> iser.post[K[K[K[K[K[K[K[K[Ki[Kuser.post_set
+<django.db.models.fields.related_descriptors.create_reverse_many_to_one_manager.<locals>.RelatedManager object at 0x7f8071429b50>
+>>> user.post_set.all()
+<QuerySet [<Post: Blog 1>, <Post: Blog 2>]>
+>>> user.post_set.all()[K.create(tite[Kle = 'Blog 3', content = '3rd X[KContent')
+<Post: Blog 3>
+>>> user.post_set.create(title = 'Blog 3', content = '3rd Content')[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Call()[K[K[C[C[C[Cpost.author.idusername[4Pname[Kdate_posted[C[C[C[C[C[C[C[C[C[4Pcontent[K = Post.objects.first()[C[C[C[C[9PPost.objects.all()
+<QuerySet [<Post: Blog 1>, <Post: Blog 2>, <Post: Blog 3>]>
+>>> exit()
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Twinkles-MacBook-Pro.local/Users/twinkle/Consultadd/Tutorials/PythonTutorials/Django/BlogProject/src[0m[27m[24m[J(base) twinkle $ [K[?2004heexit[?2004l
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...      16 completed.
+
+Script done on Fri Jul 16 18:52:44 2021
